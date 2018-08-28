@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "ToolCatalog.PCL/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5",
+      "compile": {
+        "bin/Debug/ToolCatalog.PCL.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/ToolCatalog.PCL.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/ToolCatalog.PCL.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Country>
+
+
+
+<li class="dropdown">
+    <a asp-controller="Tool"
+       asp-action="Index"
+       class="" data-toggle="dropdown">Countries<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        @foreach (var country in Model)
+        {
+            <li>
+                <a asp-controller="Tool" asp-action="List" asp-route-ssc="POZ" asp-route-unit="HR"
+                   asp-route-country="@country.CountryName">@country.CountryName</a>
+            </li>
+        }
+            <li class="divider"></li>
+        <li>
+            <a asp-controller="Tool" asp-action="List" 
+               asp-route-ssc="POZ" asp-route-unit="HR"
+               asp-route-country="">View all tools</a>
+        </li>
+    </ul>
+</li>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ToolCatalogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tool">
+    <Key>
+      <PropertyRef Name="IdTool" />
+    </Key>
+    <Property Name="IdTool" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Country" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ToolDetails" Relationship="Self.FK_IdTool_Tool" FromRole="Tool" ToRole="ToolDetails" />
+  </EntityType>
+  <EntityType Name="ToolDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CurrentVersion" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Tag" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Files" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Manual" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdTool" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Tool" Relationship="Self.FK_IdTool_Tool" FromRole="ToolDetails" ToRole="Tool" />
+  </EntityType>
+  <Association Name="FK_IdTool_Tool">
+    <End Role="Tool" Type="Self.Tool" Multiplicity="1" />
+    <End Role="ToolDetails" Type="Self.ToolDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tool">
+        <PropertyRef Name="IdTool" />
+      </Principal>
+      <Dependent Role="ToolDetails">
+        <PropertyRef Name="IdTool" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ToolCatalogEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tools" EntityType="Self.Tool" />
+    <EntitySet Name="ToolDetails" EntityType="Self.ToolDetail" />
+    <AssociationSet Name="FK_IdTool_Tool" Association="Self.FK_IdTool_Tool">
+      <End Role="Tool" EntitySet="Tools" />
+      <End Role="ToolDetails" EntitySet="ToolDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

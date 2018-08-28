@@ -1,0 +1,12 @@
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\ToolCatalog.Console.exe.config
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\obj\Debug\ToolCatalog.Console.csprojResolveAssemblyReference.cache
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\ToolCatalog.Console.exe
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\ToolCatalog.Console.pdb
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\obj\Debug\ToolCatalog.Console.exe
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\obj\Debug\ToolCatalog.Console.pdb
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\EntityFramework.dll
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\ToolCatalog.DLL.dll
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\ToolCatalog.DLL.pdb
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\EntityFramework.xml
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\VS Projects\ToolCatalog\ToolCatalog.Console\bin\Debug\EntityFramework.SqlServer.xml

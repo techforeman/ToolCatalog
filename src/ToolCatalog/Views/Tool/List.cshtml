@@ -1,0 +1,12 @@
+﻿@model ToolListViewModel
+    
+@*<h1>@Model.SSCName \ @Model.UnitName \  @Model.CountryName</h1>*@
+@foreach (var tool in Model.Tools)
+{
+  @Html.Partial("ToolOverviewSummary", tool)
+}
+
+
+
+
+  

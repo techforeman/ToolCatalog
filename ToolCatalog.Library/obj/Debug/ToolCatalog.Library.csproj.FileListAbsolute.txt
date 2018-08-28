@@ -1,0 +1,5 @@
+C:\VS Projects\ToolCatalog\ToolCatalog.Library\bin\Debug\ToolCatalog.Library.dll
+C:\VS Projects\ToolCatalog\ToolCatalog.Library\bin\Debug\ToolCatalog.Library.pdb
+C:\VS Projects\ToolCatalog\ToolCatalog.Library\obj\Debug\ToolCatalog.Library.dll
+C:\VS Projects\ToolCatalog\ToolCatalog.Library\obj\Debug\ToolCatalog.Library.pdb
+C:\VS Projects\ToolCatalog\ToolCatalog.Library\obj\Debug\ToolCatalog.Library.csprojResolveAssemblyReference.cache

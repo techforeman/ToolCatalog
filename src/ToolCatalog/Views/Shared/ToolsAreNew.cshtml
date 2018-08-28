@@ -1,0 +1,16 @@
+﻿@model Tool
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="@Model.ImageThumbnailUrl" alt="">
+        <div class="caption">
+            <h3 class="pull-right"></h3>
+            <h3>
+                <a @*asp-controller="Tool" asp-action="Details" asp-route-id="@Model.IdTool"*@>@Model.Name</a>
+            </h3>
+            @*<p>Country: @Model.Country.CountryName</p>
+                <p>Manual path: @Model.Manual</p>
+                <p>Path file: @Model.Path</p>*@
+            <p>Tag keywords: @Model.Tag</p>
+        </div>
+    </div>
+</div>

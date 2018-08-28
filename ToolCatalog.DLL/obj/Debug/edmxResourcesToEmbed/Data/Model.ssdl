@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ToolCatalogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tool">
+    <Key>
+      <PropertyRef Name="IdTool" />
+    </Key>
+    <Property Name="IdTool" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Country" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ToolDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CurrentVersion" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tag" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Files" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Manual" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IdTool" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_IdTool_Tool">
+    <End Role="Tool" Type="Self.Tool" Multiplicity="1" />
+    <End Role="ToolDetails" Type="Self.ToolDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tool">
+        <PropertyRef Name="IdTool" />
+      </Principal>
+      <Dependent Role="ToolDetails">
+        <PropertyRef Name="IdTool" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ToolCatalogModelStoreContainer">
+    <EntitySet Name="Tool" EntityType="Self.Tool" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ToolDetails" EntityType="Self.ToolDetails" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_IdTool_Tool" Association="Self.FK_IdTool_Tool">
+      <End Role="Tool" EntitySet="Tool" />
+      <End Role="ToolDetails" EntitySet="ToolDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

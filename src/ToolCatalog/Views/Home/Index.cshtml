@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+@*@await Html.PartialAsync("Carousel")
+<h2>Newest Tool at IKEA SSC</h2>
+<h4>GET INSPIRED !</h4>*@
+<h1>New Tools. Get inspired!</h1>
+<div class="row">
+        
+        @foreach(var tool in Model.ToolsAreNew)
+        {
+            @Html.Partial("ToolOverviewSummary", tool)
+
+        }
+
+
+</div>

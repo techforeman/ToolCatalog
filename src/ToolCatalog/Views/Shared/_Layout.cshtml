@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>@ViewBag.Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link  href="~/Content/site.css" rel="stylesheet"/>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+        
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+             
+                @await Component.InvokeAsync("CountryMenu")
+
+                <form class="nav-item active" asp-controller="" asp-action="Index">
+                    <p>
+                        Title: <input type="text" name="SearchString">
+                        <input type="submit" value="Filter" />
+                    </p>
+                </form>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link"asp-controller="Home" asp-action="Index">
+                            Home
+                            @*<span class="sr-only">(current)</span>*@
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
+
+
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            @*<div class="col-md-3">
+                <p class="lead">
+                    <img class="img-responsive" alt="Tool Catalog" src="~/images/WWWLibrary.jpg" />
+                </p>
+            </div>*@
+            <div class="col-md-12">
+                 @RenderBody()   
+             </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@model Tool
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="@Model.ImageThumbnailUrl" alt="">
+        <div class="caption">
+            <h3 class="pull-right"></h3>
+            <h3>
+                <a asp-controller="Tool"
+                   asp-action="Details"
+                   asp-route-id="@Model.IdTool">@Model.Name</a>
+            </h3>
+
+            <div style="overflow: hidden;">
+                <p style="float: left;"><b>Version:</b> @Model.CurrentVersion</p>
+                @if (Model.IsActive == true)
+                {
+                    <p style="float: right;"><b>Status:</b> Active </p>
+                }
+                else
+                {
+                    <p style="float: right;"><b>Status:</b> Inactive </p>
+                } 
+            </div>
+
+            <div style="overflow: hidden;">
+                <p style="float: left;"><b>Path:</b> @Model.Path</p>
+                <p style="float: right;"><b>Manual:</b> @Model.Manual</p>
+            </div>
+                    
+                <p><b>Country:</b> @Model.SSCUnit.SSCName - @Model.SSCUnit.UnitName - @Model.Country.CountryName</p>
+               
+           
+
+            <p style="float: left;"><b>Tag keywords:</b> @Model.Tag</p>
+
+            
+
+
+
+          </div>
+    </div>
+</div>

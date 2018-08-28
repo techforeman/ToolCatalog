@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ToolCatalogModelStoreContainer" CdmEntityContainer="ToolCatalogEntities">
+    <EntitySetMapping Name="Tools">
+      <EntityTypeMapping TypeName="ToolCatalogModel.Tool">
+        <MappingFragment StoreEntitySet="Tool">
+          <ScalarProperty Name="IdTool" ColumnName="IdTool" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToolDetails">
+      <EntityTypeMapping TypeName="ToolCatalogModel.ToolDetail">
+        <MappingFragment StoreEntitySet="ToolDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CurrentVersion" ColumnName="CurrentVersion" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Files" ColumnName="Files" />
+          <ScalarProperty Name="Manual" ColumnName="Manual" />
+          <ScalarProperty Name="IdTool" ColumnName="IdTool" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
