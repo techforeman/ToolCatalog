@@ -1,0 +1,54 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v1.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v1.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\K&J\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Projekty\\Tool Catalog\\Tool%20Catalog\\src\\ToolCatalog\\ToolCatalog.csproj",
+      "projectName": "ToolCatalog",
+      "projectPath": "c:\\Projekty\\Tool Catalog\\Tool%20Catalog\\src\\ToolCatalog\\ToolCatalog.csproj",
+      "packagesPath": "C:\\Users\\K&J\\.nuget\\packages\\",
+      "outputPath": "c:\\Projekty\\Tool Catalog\\Tool%20Catalog\\src\\ToolCatalog\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\K&J\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp1.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp1.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp1.0": {
+        "imports": [
+          "dotnet5.6",
+          "portable-net45+win8"
+        ]
+      }
+    }
+  }
+}

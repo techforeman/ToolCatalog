@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3C0CC40-82BA-4539-B29A-58BB32668979}"
 EndProject
@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolCatalog", "src\ToolCatalog\ToolCatalog.csproj", "{BAFFF421-0A9E-4641-B23A-A04A86351E42}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ToolCatalog.WEB", "src\ToolCatalog\ToolCatalog.WEB.xproj", "{BAFFF421-0A9E-4641-B23A-A04A86351E42}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolCatalog.DLL", "ToolCatalog.DLL\ToolCatalog.DLL.csproj", "{FCE78160-D861-4BE2-A97A-876E8A3DC370}"
 EndProject
@@ -34,8 +34,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BAFFF421-0A9E-4641-B23A-A04A86351E42} = {F3C0CC40-82BA-4539-B29A-58BB32668979}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DA72B6A4-AFAD-40E9-AC8A-88E7E0CDFCA3}
 	EndGlobalSection
 EndGlobal

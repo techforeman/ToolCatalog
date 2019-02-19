@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Projekty\\Tool Catalog\\Tool Catalog\\ToolCatalog.DLL\\ToolCatalog.DLL.csproj",
+  "TargetFramework": "v4.5.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
